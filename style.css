@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0 5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  font-weight: 300;
+}
+
+.email-form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 480px;
+  margin: 0 auto 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.email-form.large {
+  flex-direction: column;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.email-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.email-form input:focus {
+  border-color: #555;
+}
+
+.email-form button,
+.btn {
+  padding: 0.9rem 1.6rem;
+  background: #fff;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.email-form button:hover,
+.btn:hover {
+  transform: translateY(-1px);
+  background: #f0f0f0;
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.feature {
+  padding: 1.5rem 0;
+  border-top: 1px solid #222;
+}
+
+.feature h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.cta-block {
+  text-align: center;
+  padding: 4rem 1rem;
+  border-top: 1px solid #222;
+  margin-top: 3rem;
+}
+
+.cta-block h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  letter-spacing: -1px;
+  margin-bottom: 0.75rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #444;
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.card-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-top: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content p,
+.about-content ul {
+  margin-bottom: 1.25rem;
+  color: #ccc;
+}
+
+.about-content h2 {
+  color: #fff;
+  margin: 2rem 0 1rem;
+  font-weight: 500;
+}
+
+.about-content ul {
+  padding-left: 1.2rem;
+}
+
+.contact-form-section {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #222;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    gap: 1.2rem;
+  }
+  .hero {
+    padding: 3rem 0;
+  }
+  .email-form {
+    flex-direction: column;
+  }
+  .email-form input {
+    min-width: 100%;
+  }
+}
